@@ -263,6 +263,25 @@ Este proyecto cuenta con esta estructura de layout:
 
 ```
 
+## Agrega Layout a tus Rutas
+
+En el archivo `app.routes.ts` agrega la siguiente ruta:
+
+```ts
+import { Routes } from "@angular/router";
+import { AppLayout } from "./layout/components/app.layout/app.layout";
+
+export const routes: Routes = [
+  {
+    path: "",
+    component: AppLayout,
+    children: [],
+  },
+];
+```
+
+con esto cargaras automáticamente el AppLayout cuando accedas a `localhost:4200/`, y en el `children` puede agregar lo que quieras colocar dentro del layout, pues este tiene un route-outlet que lo permite.
+
 Esta estructura corresponde a un sistema de layout modular para una aplicación Angular, organizado en 3 secciones principales. Te explico cada parte:
 
 ### 1. **Components (Componentes de UI del Layout)**
