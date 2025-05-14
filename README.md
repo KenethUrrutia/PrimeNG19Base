@@ -117,7 +117,7 @@ Crear el archivo`.postcssrc.json` en la raíz del proyecto y colocarle el plugi
 
 Agrega los `@use`al archivo `./src/styles.scss` que importa los estilos de tailwind
 
-```js
+```scss
 @use "tailwindcss";
 ```
 
@@ -139,9 +139,9 @@ En el directorio de tu proyecto:
 
 ### 4.2.1 Registrar estilos
 
-En tu `styles.css` agrega:
+En tu `styles.scss` agrega:
 
-```json
+```scss
 @use "primeicons/primeicons.css";
 @use 'primeflex/primeflex.css'
 ```
