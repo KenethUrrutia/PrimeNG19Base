@@ -1,1 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
+
+@use "tailwindcss";
+@use "primeicons/primeicons.css";
+@use "primeflex/primeflex.css";
+@use "./app/layout/styles/layout.scss";
