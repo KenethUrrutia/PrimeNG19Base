@@ -1,0 +1,18 @@
+<div class="breadcrumb-container">
+  <p-breadcrumb [model]="items" [home]="home">
+    <ng-template pTemplate="item" let-item let-index="index">
+      <a
+        *ngIf="item.routerLink; else noLink"
+        [routerLink]="item.routerLink"
+        class="p-menuitem-link"
+      >
+        <span *ngIf="item.icon" [class]="item.icon"></span>
+        <span class="breadcrumb-label">{{ item.label }}</span>
+      </a>
+      <ng-template #noLink>
+        <span *ngIf="item.icon" [class]="item.icon"></span>
+        <span class="breadcrumb-label">{{ item.label }}</span>
+      </ng-template>
+    </ng-template>
+  </p-breadcrumb>
+</div>
